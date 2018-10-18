@@ -37,13 +37,7 @@ class TicTacToe
     return false
   end
 
-  def valid_move?(position)
-    if ( position.between?(0, 8) && !position_taken?(@board, position) )
-      return true
-    end
-    return false
-  end
-
+  
 
 
 end
