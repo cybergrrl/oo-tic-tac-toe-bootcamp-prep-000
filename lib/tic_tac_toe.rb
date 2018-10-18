@@ -44,6 +44,16 @@ class TicTacToe
     return false
   end
 
+  def turn_count()
+    counter = 0
+    @board.each do |position|
+      if position == "X" || position == "O"
+        counter += 1
+      end
+    end
+    return counter
+  end
+  
   def turn()
     puts "Please enter 1-9:"
     input = gets.chomp
