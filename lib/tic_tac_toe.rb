@@ -112,9 +112,9 @@ class TicTacToe
     if won?() == false
       return nil
     else
-      if board[win_combination[0]] == "X"
+      if @board[win_combination[0]] == "X"
         return "X"
-      elsif board[win_combination[0]] == "O"
+      elsif @board[win_combination[0]] == "O"
         return "O"
       end
     end
