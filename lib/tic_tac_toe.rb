@@ -107,5 +107,17 @@ class TicTacToe
     end
   end
 
+  def winner()
+    win_combination = won?()
+    if won?() == false
+      return nil
+    else
+      if board[win_combination[0]] == "X"
+        return "X"
+      elsif board[win_combination[0]] == "O"
+        return "O"
+      end
+    end
+  end
 
 end
