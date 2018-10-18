@@ -37,7 +37,7 @@ class TicTacToe
     return false
   end
 
-  
+
 
 
 end
