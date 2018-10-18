@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+require 'pry'
+require_relative '../lib/tic_tac_toe.rb'
+
+def play()
+  while !over?()
+    turn()
+  end
+
+  if won?()
+    puts "Congratulations #{winner()}!"
+  end
+
+  if draw?()
+    puts "Cat's Game!"
+  end
+end
