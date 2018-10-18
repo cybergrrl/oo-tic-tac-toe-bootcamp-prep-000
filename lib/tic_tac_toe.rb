@@ -31,5 +31,5 @@ class TicTacToe
   end
 
 
-  
+
 end
