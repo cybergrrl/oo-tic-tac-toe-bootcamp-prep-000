@@ -90,6 +90,10 @@ class TicTacToe
     return false
   end
 
+  def full?()
+    @board.all? { |e| (e == "X" || e == "O") }
+  end
+
 
 
 end
